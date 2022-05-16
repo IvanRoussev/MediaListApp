@@ -19,6 +19,10 @@ def homepage():
     media_entries = mediamnger.media
     return render_template('index.html', data=media_entries, types=mediamnger.types, manager=mediamnger), 200
 
+@app.route("/about", methods=["GET"])
+def get_about():
+    return render_template('about.html'), 200
+    
 @app.route("/updated", methods=['POST'])
 def homepage_updated():
     mediamnger = MediaManager()
@@ -79,6 +83,11 @@ def get_entry(media_type, name):
     if entry is None:
         return 'Entry not found', 404
     return render_template('entry.html', name=name, data=entry.to_dict()), 200
+
+
+
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)

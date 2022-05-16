@@ -24,17 +24,42 @@
 
 html{
 background-color: var(--light_green);
-}
-
-.navbar{
-display: flex;
-justify-content: center;
-padding-top: 25px;
-background-color: var(--dark_green);
-padding-bottom: 25px;
-font-size: 100px;
 font-family: 'Fira Sans', sans-serif;
 }
+
+
+
+header{
+  background-color: var(--dark_green);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topnav{
+  display: flex;
+  flex-direction: row;
+}
+
+.topnav a {
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+
+.topnav-right{
+  display: flex;
+  flex-direction: row;
+}
+
+.topnav-right a{
+  padding-left: 25px;
+}
+
+.topnav-about{
+  padding-top: 25px;
+}
+
 
 .main{
 background-color: var(--light_green);
@@ -80,7 +105,7 @@ button:hover{
 background-color: var(--cream);
 }
 
-h1 {
+.indexh1 {
   font-family: 'Fira Sans', sans-serif;
   text-align: center;
 }
@@ -98,4 +123,98 @@ form {
 .CreateButtons {
   font-family: 'Fira Sans', sans-serif;
   padding-top: 10px;
+}
+
+/*#################### ABOUT.HTML ######################## */
+
+.about-main h1{
+  padding-top: 20px;
+  font-size: 40px;
+  display:flex;
+  justify-content: center;
+}
+
+
+.git-icon{
+  display:block;
+
+}
+
+
+.about-intro div h2{
+  padding-top: 75px;
+  font-size: 40px;
+  display:flex;
+  justify-content: center;
+}
+
+.about-main{
+  display: flex;
+  flex-direction: column;
+}
+
+.p-about{
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.about-icons{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.about-icons img{
+  width: 75px;
+  height: auto;
+}
+
+
+.members{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.members div{
+  padding-bottom: 200px;
+  background-color: white;
+  padding: 25px 50px 200px;
+}
+
+
+.members img{
+  border-radius: 10px;
+}
+
+
+.members p{
+  padding-top: 10px;
+}
+
+.copyright{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.link-img{
+  width: 40px;
+  height: auto;
+}
+
+.git-img{
+  padding-bottom: -100px;
+  width: 40px;
+  height: auto;
+}
+
+#alex-imgs{
+  padding-top: 25px;
+}
+
+#christina-imgs{
+  padding-top: 25px;
 }
